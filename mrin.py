@@ -17,7 +17,7 @@ import subprocess
 
 
 # Insert your Telegram bot token here
-bot = telebot.TeleBot('7775840737:AAFmUfq_O-IctYTJ13ErkiJ-_8XQqiGL-dA')
+bot = telebot.TeleBot('7557644714:AAH9zkXYj4BbRZMC3O2sCbADlfa6FJBoXEQ')
 
 # Admin user IDs
 admin_id = {"6768273586", "2007860433"}
@@ -27,7 +27,7 @@ USER_FILE = "users.json"
 LOG_FILE = "log.txt"
 KEY_FILE = "keys.json"
 RESELLERS_FILE = "resellers.json"
-BOT_LINK = "@MRiN_DiLDOS_bot"
+BOT_LINK = "@NEERAJ_PAPA_BOt"
 escaped_bot_link = BOT_LINK.replace('_', '\\_')
 
 # Per key cost for resellers
@@ -70,10 +70,10 @@ def save_keys():
     with open(KEY_FILE, "w") as file:
         json.dump(keys, file)
 
-def create_random_key(length=15):
+def create_random_key(length=18):
     characters = string.ascii_letters + string.digits
     random_key = ''.join(random.choice(characters) for _ in range(length))
-    custom_key = f"VIP-MoY-{random_key}"
+    custom_key = f"{random_key}"
     return custom_key
 
 def add_time_to_current_date(years=0, months=0, days=0, hours=0, minutes=0, seconds=0):
@@ -299,7 +299,7 @@ def start_command(message):
     myinfo_button = types.KeyboardButton("👤 My Info")
     redeem_button = types.KeyboardButton("🎟️ Redeem Key")
     markup.add(attack_button, myinfo_button, redeem_button)
-    bot.reply_to(message, "𝗪𝗲𝗹𝗰𝗼𝗺𝗲 𝘁𝗼 *𝗠𝗥𝗶𝗡 𝘅 𝗗𝗶𝗟𝗗𝗢𝗦™* 𝗯𝗼𝘁 !", reply_markup=markup, parse_mode='Markdown')
+    bot.reply_to(message, "𝗪𝗲𝗹𝗰𝗼𝗺𝗲 𝘁𝗼 *𝗡𝗘𝗘𝗥𝗔𝗝 𝘅 𝗗𝗜𝗟𝗗𝗢𝗦™* 𝗯𝗼𝘁 !", reply_markup=markup, parse_mode='Markdown')
     bot.send_message(
         message.chat.id,
         f"*➖𝗣𝗹𝗲𝗮𝘀𝗲 𝗦𝗲𝗹𝗲𝗰𝘁 𝗮𝗻 𝗼𝗽𝘁𝗶𝗼𝗻 𝗳𝗿𝗼𝗺 𝗯𝗲𝗹𝗼𝘄 👀* ",
