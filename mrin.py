@@ -251,7 +251,7 @@ def process_redeem_key(message):
             expiration_time = add_time_to_current_date(hours=1)
         elif duration == "5hours":
             expiration_time = add_time_to_current_date(hours=5)
-        elif duration == "1days":
+        elif duration == "1day":
             expiration_time = add_time_to_current_date(days=1)    
         elif duration == "7days":
             expiration_time = add_time_to_current_date(days=7)
