@@ -26,7 +26,7 @@ DAILY_ATTACK_LIMIT = 20  # Daily attack limit per user
 
 blocked_ports = [8700, 20000, 443, 17500, 9031, 20002, 20001, 10000, 10001, 10002]  # Blocked ports list
 
-EXEMPTED_USERS = [, 2007860433]
+EXEMPTED_USERS = [6239926262, 2007860433]
 
 # Initialize reset_time at midnight IST of the current day
 def initialize_reset_time():
