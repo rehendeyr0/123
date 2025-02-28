@@ -11,7 +11,7 @@ logging.basicConfig(format='%(asctime)s - %(name)s - %(levelname)s - %(message)s
 
 TOKEN = '7723924147:AAGma44yk2dLIVLME3mpbXb0Ivf5ojgYfnU' 
 CHANNEL_ID = '-1002282530853'
-required_channel = '@DANGERCHEAT_DDOS'  # Replace with your actual channel username
+required_channel = '@DANGER_DDOS'  # Replace with your actual channel username
 
 bot = telebot.TeleBot(TOKEN)
 
@@ -20,9 +20,9 @@ user_cooldowns = {}
 user_photos = {}  # Tracks whether a user has sent a photo as feedback
 user_bans = {}  # Tracks user ban status and ban expiry time
 
-COOLDOWN_DURATION = 300  # Cooldown duration in seconds
-BAN_DURATION = timedelta(minutes=15)
-DAILY_ATTACK_LIMIT = 20  # Daily attack limit per user
+COOLDOWN_DURATION = 180  # Cooldown duration in seconds
+BAN_DURATION = timedelta(minutes=5)
+DAILY_ATTACK_LIMIT = 15  # Daily attack limit per user
 
 blocked_ports = [8700, 20000, 443, 17500, 9031, 20002, 20001, 10000, 10001, 10002]  # Blocked ports list
 
@@ -82,7 +82,7 @@ async def run_attack(chat_id, ip, port, duration):
         if stderr:
             print(f"[stderr]\n{stderr.decode()}")
         bot.send_message(chat_id,
-                         f"🚀 𝘼𝙩𝙩𝙖𝙘𝙠 𝙤𝙣 {ip} : {port} 𝙛𝙤𝙧 {duration} 𝙨𝙚𝙘𝙤𝙣𝙙𝙨 𝙛𝙞𝙣𝙞𝙨𝙝𝙚𝙙 ✅\n\n𝗧𝗵𝗮𝗻𝗸𝗬𝗼𝘂 𝗙𝗼𝗿 𝘂𝘀𝗶𝗻𝗴 𝗢𝘂𝗿 𝗦𝗲𝗿𝘃𝗶𝗰𝗲 <> 𝐃𝐀𝐍𝐆𝐄𝐑 𝐂𝐇𝐄𝐀𝐓 𝐃𝐃𝐎𝐒 𝐆𝐑𝐎𝐔𝐏 🇮🇳™")
+                         f"🚀 𝘼𝙩𝙩𝙖𝙘𝙠 𝙤𝙣 {ip} : {port} 𝙛𝙤𝙧 {duration} 𝙨𝙚𝙘𝙤𝙣𝙙𝙨 𝙛𝙞𝙣𝙞𝙨𝙝𝙚𝙙 ✅\n\n𝗧𝗵𝗮𝗻𝗸𝗬𝗼𝘂 𝗙𝗼𝗿 𝘂𝘀𝗶𝗻𝗴 𝗢𝘂𝗿 𝗦𝗲𝗿𝘃𝗶𝗰𝗲 <> 𝐃𝐀𝐍𝐆𝐄𝐑 𝐂𝐇𝐄𝐀𝐓 𝐃𝐃𝐎𝐒 𝐆𝐑𝐎𝐔𝐏 🇮🇳™\n\n❗️❗️ 𝙎𝙀𝙉𝘿 𝙁𝙀𝙀𝘿𝘽𝘼𝘾𝙆 𝙊𝙁 𝙔𝙊𝙐𝙍 𝙈𝘼𝙏𝘾𝙃 𝙏𝙊 𝙐𝙎𝙀 𝘿𝘿𝙊𝙎 𝙄𝙉 𝙉𝙀𝙓𝙏 𝙈𝘼𝙏𝘾𝙃 ❗️❗️")
     except Exception as e:
         bot.send_message(chat_id,
                          f"*{str(e)}*", parse_mode='Markdown')
@@ -92,15 +92,15 @@ def welcome_start(message):
     user_name = message.from_user.first_name
     bot.send_message(
             message.chat.id,
-            f"👋🏻Welcome {user_name}.\n\n"
-            f"[➖ 𝗖𝗟𝗜𝗖𝗞 𝗛𝗘𝗥𝗘 𝗧𝗢 𝗝𝗢𝗜𝗡 ➖](https://t.me/DANGERCHEAT_DDOS)\n\n"    
-            f"*Try To Run This Command : /bgmi*",
+            f"👋🏻  Welcome {user_name}.\n\n"
+            f"[➖ 𝗖𝗟𝗜𝗖𝗞 𝗛𝗘𝗥𝗘 𝗧𝗢 𝗝𝗢𝗜𝗡 ➖](https://t.me/DANGER_DDOS)\n\n"    
+            f"*Try To Run This Command : /Danger*",
     parse_mode="Markdown",
     disable_web_page_preview=True  # This disables the link preview
     )
     bot.send_message(
             message.chat.id,
-            f".\n➤    [➖𝗗𝗠 𝗙𝗢𝗥 𝗥𝗘𝗕𝗥𝗔𝗡𝗗𝗜𝗡𝗚➖](https://t.me/MrinMoYxCB)   ᯓᡣ𐭩\n.\n",
+            f".\n➤    [➖𝗗𝗠 𝗙𝗢𝗥 𝗥𝗘𝗕𝗥𝗔𝗡𝗗𝗜𝗡𝗚➖](https://t.me/MARSHALOP)   ᯓᡣ𐭩\n.\n",
     parse_mode="Markdown",
     disable_web_page_preview=True  # This disables the link preview
     )
@@ -129,7 +129,7 @@ def Danger_command(message):
             bot.send_message(
                 message.chat.id,
                 f"🚨𝗛𝗜 👋 {message.from_user.first_name}, \n\n‼️ *𝐃𝐀𝐍𝐆𝐄𝐑 𝐂𝐇𝐄𝐀𝐓 𝐃𝐃𝐎𝐒 𝐁𝐎𝐓 ⚡️ 𝗔𝗖𝗖𝗘𝗦𝗦 𝗗𝗘𝗡𝗜𝗘𝗗 !* ‼️\n\n"
-                f"            [➖ 𝗖𝗟𝗜𝗖𝗞 𝗛𝗘𝗥𝗘 𝗧𝗢 𝗝𝗢𝗜𝗡 ➖](https://t.me/DANGERCHEAT_DDOS)\n\n"
+                f"            [➖ 𝗖𝗟𝗜𝗖𝗞 𝗛𝗘𝗥𝗘 𝗧𝗢 𝗝𝗢𝗜𝗡 ➖](https://t.me/DANGER_DDOS)\n\n"
                 "🔒 *𝗬𝗼𝘂 𝗺𝘂𝘀𝘁 𝗷𝗼𝗶𝗻 𝗮𝗻𝗱 𝗯𝗲𝗰𝗼𝗺𝗲 𝗮 𝗺𝗲𝗺𝗯𝗲𝗿 𝗼𝗳 𝗼𝘂𝗿 𝗼𝗳𝗳𝗶𝗰𝗶𝗮𝗹 𝗰𝗵𝗮𝗻𝗻𝗲𝗹 𝘁𝗼 𝘂𝘀𝗲 𝘁𝗵𝗶𝘀 𝗰𝗼𝗺𝗺𝗮𝗻𝗱 𝗵𝗲𝗿𝗲!* 🔒\n\n",
                 parse_mode="Markdown",
                 disable_web_page_preview=True,
@@ -149,7 +149,7 @@ def Danger_command(message):
     # Ensure the bot only works in the specified channel or group
     if str(message.chat.id) != CHANNEL_ID:
         bot.send_message(message.chat.id,
-                         "⚠️⚠️ 𝗧𝗵𝗶𝘀 𝗯𝗼𝘁 𝗶𝘀 𝗻𝗼𝘁 𝗮𝘂𝘁𝗵𝗼𝗿𝗶𝘇𝗲𝗱 𝘁𝗼 𝗯𝗲 𝘂𝘀𝗲𝗱 𝗵𝗲𝗿𝗲 ⚠️⚠️")
+                         "⚠️⚠️ 𝙏𝙃𝙄𝙎 𝘽𝙊𝙏 𝙄𝙎 𝙉𝙊𝙏 𝘼𝙐𝙏𝙃𝙊𝙍𝙄𝙎𝙀𝘿 𝙏𝙊 𝘽𝙀 𝙐𝙎𝙀𝘿 𝙃𝙀𝙍𝙀 ⚠️⚠️\n\n𝙐𝙎𝙀 𝙏𝙃𝙄𝙎 𝘽𝙊𝙏 𝙄𝙉 𝘾𝙃𝘼𝙏 𝙂𝙍𝙊𝙐𝙋 👇\n\n👉 https://t.me/+e6xuG_n1THMxM2Y1 \n\n𝘼𝙉𝙔 𝙋𝙍𝙊𝘽𝙇𝙀𝙈 𝙁𝙀𝙇𝙇 𝙁𝙍𝙀𝙀 𝙏𝙊 𝘼𝙎𝙆 - @ITS_DANGER_OP")
         return
 
     # Reset counts daily
@@ -242,7 +242,7 @@ def Danger_command(message):
         # Notify the attack has started
         bot.send_message(
             message.chat.id,
-            f"🚀𝙃𝙞 {message.from_user.first_name}, 𝘼𝙩𝙩𝙖𝙘𝙠 𝙨𝙩𝙖𝙧𝙩𝙚𝙙 𝙤𝙣 {ip} : {port} 𝙛𝙤𝙧 {default_duration} 𝙨𝙚𝙘𝙤𝙣𝙙𝙨 \n[ 𝙍𝙚𝙦𝙪𝙚𝙨𝙩𝙚𝙙 𝘿𝙪𝙧𝙖𝙩𝙞𝙤𝙣 : {user_duration} 𝙨𝙚𝙘𝙤𝙣𝙙𝙨 ]\n\n𝙍𝙀𝙈𝘼𝙄𝙉𝙄𝙉𝙂 𝘼𝙏𝙏𝘼𝘾𝙆 𝙁𝙊𝙍 𝙏𝙊𝘿𝘼𝙔 = {remaining_attacks} \n\n❗️❗️ 𝙋𝙡𝙚𝙖𝙨𝙚 𝙎𝙚𝙣𝙙 𝙁𝙚𝙚𝙙𝙗𝙖𝙘𝙠 ❗️❗️"
+            f"🚀𝙃𝙞 {message.from_user.first_name}, 𝘼𝙩𝙩𝙖𝙘𝙠 𝙨𝙩𝙖𝙧𝙩𝙚𝙙 𝙤𝙣 {ip} : {port} 𝙛𝙤𝙧 {default_duration} 𝙨𝙚𝙘𝙤𝙣𝙙𝙨 \n\n[ 𝙍𝙚𝙦𝙪𝙚𝙨𝙩𝙚𝙙 𝘿𝙪𝙧𝙖𝙩𝙞𝙤𝙣 : {user_duration} 𝙨𝙚𝙘𝙤𝙣𝙙𝙨 ]\n\n𝙍𝙀𝙈𝘼𝙄𝙉𝙄𝙉𝙂 𝘼𝙏𝙏𝘼𝘾𝙆'𝙨 𝙁𝙊𝙍 𝙏𝙊𝘿𝘼𝙔 = {remaining_attacks} \n\n❗️❗️ 𝙎𝙀𝙉𝘿 𝙁𝙀𝙀𝘿𝘽𝘼𝘾𝙆 𝙊𝙁 𝙔𝙊𝙐𝙍 𝙈𝘼𝙏𝘾𝙃 𝙏𝙊 𝙐𝙎𝙀 𝘿𝘿𝙊𝙎 𝙄𝙉 𝙉𝙀𝙓𝙏 𝙈𝘼𝙏𝘾𝙃 ❗️❗️"
         )
 
         # Run the attack asynchronously in a separate thread
@@ -263,7 +263,7 @@ def handle_photo(message):
     user_photos[user_id] = True
     bot.send_message(
         message.chat.id,
-        f"*𝗧𝗵𝗮𝗻𝗸 𝘆𝗼𝘂 𝗳𝗼𝗿 𝘆𝗼𝘂𝗿 𝗳𝗲𝗲𝗱𝗯𝗮𝗰𝗸 ✅ , {message.from_user.first_name} !  𝗬𝗼𝘂 𝗰𝗮𝗻 𝗻𝗼𝘄 𝗰𝗼𝗻𝘁𝗶𝗻𝘂𝗲 𝘂𝘀𝗶𝗻𝗴 𝘁𝗵𝗲 𝗯𝗼𝘁 .*",
+        f"*𝗧𝗵𝗮𝗻𝗸 𝘆𝗼𝘂 𝗳𝗼𝗿 𝘆𝗼𝘂𝗿 𝗳𝗲𝗲𝗱𝗯𝗮𝗰𝗸 ✅ , {message.from_user.first_name} !  𝗬𝗼𝘂 𝗰𝗮𝗻 𝗻𝗼𝘄 𝗰𝗼𝗻𝘁𝗶𝗻𝘂𝗲 𝘂𝘀𝗶𝗻𝗴 𝘁𝗵𝗲 𝗯𝗼𝘁 \n\n𝙎𝙃𝘼𝙍𝙀 𝙐𝙎 - @DANGER_DDOS*",
     parse_mode="Markdown",
     )
 
