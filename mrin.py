@@ -149,7 +149,7 @@ def Danger_command(message):
     # Ensure the bot only works in the specified channel or group
     if str(message.chat.id) != CHANNEL_ID:
         bot.send_message(message.chat.id,
-                         "⚠️⚠️ 𝙏𝙃𝙄𝙎 𝘽𝙊𝙏 𝙄𝙎 𝙉𝙊𝙏 𝘼𝙐𝙏𝙃𝙊𝙍𝙄𝙎𝙀𝘿 𝙏𝙊 𝘽𝙀 𝙐𝙎𝙀𝘿 𝙃𝙀𝙍𝙀 ⚠️⚠️\n\n𝙐𝙎𝙀 𝙏𝙃𝙄𝙎 𝘽𝙊𝙏 𝙄𝙉 𝘾𝙃𝘼𝙏 𝙂𝙍𝙊𝙐𝙋 👇\n\n👉 https://t.me/+e6xuG_n1THMxM2Y1 \n\n𝘼𝙉𝙔 𝙋𝙍𝙊𝘽𝙇𝙀𝙈 𝙁𝙀𝙇𝙇 𝙁𝙍𝙀𝙀 𝙏𝙊 𝘼𝙎𝙆 - @ITS_DANGER_OP")
+                         "⚠️⚠️ 𝙏𝙃𝙄𝙎 𝘽𝙊𝙏 𝙄𝙎 𝙉𝙊𝙏 𝘼𝙐𝙏𝙃𝙊𝙍𝙄𝙎𝙀𝘿 𝙏𝙊 𝘽𝙀 𝙐𝙎𝙀𝘿 𝙃𝙀𝙍𝙀 ⚠️⚠️\n\n𝙐𝙎𝙀 𝙏𝙃𝙄𝙎 𝘽𝙊𝙏 𝙄𝙉 𝘾𝙃𝘼𝙏 𝙂𝙍𝙊𝙐𝙋 👇\n\n👉 https://t.me/+e6xuG_n1THMxM2Y1 \n\n𝘼𝙉𝙔 𝙋𝙍𝙊𝘽𝙇𝙀𝙈 𝙁𝙀𝙇𝙇 𝙁𝙍𝙀𝙀 𝙏𝙊 𝘼𝙎𝙆 - @ITS_DANGER_OP", disable_web_page_preview=True)
         return
 
     # Reset counts daily
