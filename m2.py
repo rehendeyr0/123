@@ -10,7 +10,7 @@ from datetime import datetime, timedelta, timezone
 logging.basicConfig(format='%(asctime)s - %(name)s - %(levelname)s - %(message)s', level=logging.INFO)
 
 TOKEN = '8005743407:AAFb4fZKsHFsRSMglD0W5PC-zFMpj9nNT2M' 
-CHANNEL_ID = '-1002444623350'
+CHANNEL_ID = '-1002197002727'
 required_channel = '@MRiNxDiLDOS'  # Replace with your actual channel username
 
 bot = telebot.TeleBot(TOKEN)
